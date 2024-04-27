@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AnimeMappi</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+</head>
+<body>
+    <h1>AnimeMappi</h1>
+    <h2>Welcome to FlaskApp!</h2>
+    <h3>{{testo}}</h3>
+
+    <button hx-post="/clicked" hx-swap="outerHTML">
+        Click Me
+    </button>
+
+</body>
+</html>
